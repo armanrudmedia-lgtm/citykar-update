@@ -1,0 +1,966 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact City Kar at (323) 333-3095 or visit us at 1437 N La Brea Ave, Los Angeles CA 90028.">
+<meta name="keywords" content="hybrid car rental Los Angeles, Prius rental LA, Uber Lyft rental car, gig driver car rental, Toyota Prius rent West Hollywood">
+<meta property="og:title" content="Contact Us — City Kar | 323-333-3095">
+<meta property="og:description" content="Contact City Kar at (323) 333-3095 or visit us at 1437 N La Brea Ave, Los Angeles CA 90028.">
+<meta property="og:type" content="website">
+<title>Contact Us — City Kar | 323-333-3095</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&amp;display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════
+   CITY KAR — Brand Theme
+   Typography: Playfair Display (headings) + DM Sans (body)
+   Palette: Warm parchment, aged gold, espresso, linen
+═══════════════════════════════════════════════════ */
+/* removed */:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* Warm beige palette */
+  --parchment: #f5f0e8;
+  --linen:     #ede8dd;
+  --sand:      #e0d8c8;
+  --stone:     #c8bfad;
+  --taupe:     #9a9080;
+  --espresso:  #2c2418;
+  --bark:      #4a3d28;
+  --gold:      #b8902a;
+  --gold-lt:   #d4aa4a;
+  --gold-pale: #f0e6c8;
+  --white:     #fdfbf7;
+  --warm-dk:   #1e1a12;
+
+  /* Type */
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+}
+
+html{scroll-behavior:smooth}
+body{
+  background:var(--parchment);
+  color:var(--espresso);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.75;
+  overflow-x:hidden;
+  font-weight:400;
+}
+
+/* ── NAV ────────────────────────────────────────── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 52px;height:70px;
+  background:rgba(245,240,232,0.97);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(184,144,42,0.25);
+}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo-text{display:flex;flex-direction:column;gap:1px}
+.nav-logo-text span:first-child{
+  font-family:var(--serif);font-size:1rem;font-weight:400;
+  letter-spacing:3px;text-transform:uppercase;
+  color:var(--espresso);line-height:1;
+}
+.nav-logo-text span:last-child{
+  font-family:var(--sans);font-size:.5rem;font-weight:500;
+  letter-spacing:5px;text-transform:uppercase;
+  color:var(--gold);line-height:1;
+}
+.nav-links{display:flex;gap:32px}
+.nav-links a{
+  font-family:var(--sans);font-size:.72rem;font-weight:500;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--taupe);text-decoration:none;transition:color .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--bark)}
+.nav-end{display:flex;align-items:center;gap:16px}
+.nav-phone{
+  font-family:var(--sans);font-size:.78rem;font-weight:500;
+  color:var(--bark);text-decoration:none;
+}
+.nav-cta{
+  background:var(--gold);color:var(--warm-dk);
+  padding:10px 26px;font-family:var(--sans);
+  font-size:.7rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  text-decoration:none;transition:all .2s;
+}
+.nav-cta:hover{background:var(--gold-lt)}
+.hamburger{
+  display:none;flex-direction:column;gap:5px;
+  cursor:pointer;background:none;border:none;padding:4px;
+}
+.hamburger span{width:22px;height:1.5px;background:var(--espresso);display:block;transition:all .3s}
+.mobile-menu{
+  display:none;position:fixed;top:70px;left:0;right:0;
+  background:rgba(245,240,232,0.98);padding:24px 32px;
+  border-bottom:1px solid rgba(184,144,42,.15);z-index:499;
+}
+.mobile-menu a{
+  display:block;font-family:var(--sans);font-size:.82rem;font-weight:500;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--taupe);text-decoration:none;
+  padding:13px 0;border-bottom:1px solid rgba(44,36,24,.08);
+}
+.mobile-menu a:hover{color:var(--gold)}
+.mobile-menu.open{display:block}
+
+/* ── HERO ────────────────────────────────────────── */
+.hero{
+  margin-top:70px;display:grid;grid-template-columns:1fr 1fr;
+  min-height:calc(100vh - 70px);overflow:hidden;
+}
+.hero-left{
+  background:var(--warm-dk);padding:88px 68px;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;overflow:hidden;
+}
+.hero-left::before{
+  content:'';position:absolute;
+  bottom:-100px;left:-80px;width:320px;height:320px;
+  border-radius:50%;background:rgba(184,144,42,.06);
+}
+.hero-left::after{
+  content:'';position:absolute;top:0;right:0;
+  width:1px;height:100%;
+  background:linear-gradient(to bottom,transparent,rgba(184,144,42,.25),transparent);
+}
+.hero-right{position:relative;overflow:hidden}
+.hero-right img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.hero-right::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:80px;
+  background:linear-gradient(to right,var(--warm-dk),transparent);z-index:2;
+}
+.hero-badge{
+  position:absolute;bottom:36px;right:36px;z-index:3;
+  background:rgba(28,20,10,.88);backdrop-filter:blur(12px);
+  border:1px solid rgba(184,144,42,.3);padding:18px 22px;
+}
+.hero-badge-num{
+  font-family:var(--serif);font-size:2rem;color:var(--gold);
+  line-height:1;font-style:italic;
+}
+.hero-badge-label{
+  font-family:var(--sans);font-size:.6rem;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;
+  color:rgba(245,240,232,.45);margin-top:4px;
+}
+
+/* ── TYPE SYSTEM ────────────────────────────────── */
+.eyebrow{
+  font-family:var(--sans);font-size:.65rem;font-weight:600;
+  letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);
+  margin-bottom:16px;display:flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--gold)}
+
+h1{
+  font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.8rem);
+  font-weight:400;line-height:1.05;color:#f5f0e8;
+  margin-bottom:22px;letter-spacing:-.5px;
+}
+h1 em{font-style:italic;color:var(--gold)}
+
+h2{
+  font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);
+  font-weight:400;line-height:1.1;color:var(--espresso);
+  margin-bottom:14px;letter-spacing:-.3px;
+}
+h2 em{font-style:italic;color:var(--gold)}
+.dark h2,.sage-bg h2{color:#f5f0e8}
+
+h3{
+  font-family:var(--serif);font-size:1.5rem;
+  font-weight:400;line-height:1.2;color:var(--espresso);
+  margin-bottom:10px;
+}
+
+.hero-sub{
+  font-family:var(--sans);font-size:.95rem;font-weight:300;
+  color:rgba(245,240,232,.52);line-height:1.9;
+  max-width:400px;margin-bottom:48px;
+}
+.hero-sub strong{color:rgba(245,240,232,.85);font-weight:500}
+
+.sec-sub{
+  font-family:var(--sans);font-size:.92rem;font-weight:300;
+  color:var(--taupe);max-width:500px;margin-bottom:52px;line-height:1.85;
+}
+.dark .sec-sub,.sage-bg .sec-sub{color:rgba(245,240,232,.45)}
+
+/* ── BUTTONS ────────────────────────────────────── */
+.btn-gold{
+  background:var(--gold);color:var(--warm-dk);
+  padding:15px 38px;font-family:var(--sans);
+  font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;transition:all .25s;
+}
+.btn-gold:hover{background:var(--gold-lt);box-shadow:0 6px 24px rgba(184,144,42,.3)}
+.btn-outline{
+  border:1px solid rgba(245,240,232,.2);color:rgba(245,240,232,.6);
+  padding:15px 32px;font-family:var(--sans);
+  font-size:.72rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;transition:all .25s;
+}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn-dark{
+  background:var(--warm-dk);color:#f5f0e8;
+  padding:14px 36px;font-family:var(--sans);
+  font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;transition:background .2s;
+}
+.btn-dark:hover{background:var(--bark)}
+.btn-forest{
+  background:var(--espresso);color:#f5f0e8;
+  padding:14px 32px;font-family:var(--sans);
+  font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;transition:background .2s;border-radius:1px;
+}
+.btn-forest:hover{background:var(--bark)}
+.btn-gold-outline{
+  border:1.5px solid var(--gold);color:var(--gold);
+  padding:13px 28px;font-family:var(--sans);
+  font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  text-decoration:none;display:inline-block;transition:all .2s;border-radius:1px;
+}
+.btn-gold-outline:hover{background:var(--gold);color:var(--warm-dk)}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ── TICKER ─────────────────────────────────────── */
+.ticker{
+  background:var(--espresso);padding:11px 0;
+  overflow:hidden;white-space:nowrap;
+  border-top:1px solid rgba(184,144,42,.15);
+}
+.ticker-inner{display:inline-flex;animation:tick 28s linear infinite}
+.ticker-inner span{
+  font-family:var(--sans);font-size:.65rem;font-weight:500;
+  letter-spacing:2.5px;text-transform:uppercase;
+  color:rgba(245,240,232,.4);padding:0 28px;
+}
+.ticker-inner span::after{content:'·';margin-left:28px;color:var(--gold);opacity:.6}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── STATS BAR ──────────────────────────────────── */
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  background:var(--linen);
+  border-bottom:1px solid var(--sand);
+  border-top:1px solid var(--sand);
+}
+.stat{
+  padding:44px 36px;border-right:1px solid var(--sand);
+  text-align:center;transition:background .3s;
+}
+.stat:last-child{border-right:none}
+.stat:hover{background:var(--sand)}
+.stat-num{
+  font-family:var(--serif);font-size:3.2rem;font-style:italic;
+  color:var(--gold);line-height:1;margin-bottom:8px;
+}
+.stat-label{
+  font-family:var(--sans);font-size:.62rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;color:var(--taupe);
+}
+
+/* ── SECTIONS ───────────────────────────────────── */
+.section{padding:96px 64px}
+.section.alt{background:var(--linen)}
+.section.dark{background:var(--warm-dk);color:#f5f0e8}
+.section.sage-bg{background:var(--espresso);color:#f5f0e8}
+.section.white-bg{background:var(--white)}
+
+/* ── FLEET GRID ─────────────────────────────────── */
+.fleet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand)}
+.fleet-card{
+  background:var(--white);overflow:hidden;
+  transition:all .3s;position:relative;
+}
+.fleet-card:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(44,36,24,.12);z-index:2}
+.fleet-img{width:100%;height:220px;object-fit:cover;display:block;transition:transform .4s}
+.fleet-card:hover .fleet-img{transform:scale(1.03)}
+.fleet-body{padding:30px}
+.fleet-tier{
+  font-family:var(--sans);font-size:.6rem;font-weight:600;
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);
+  margin-bottom:10px;display:flex;align-items:center;gap:6px;
+}
+.fleet-tier::before{content:'';width:14px;height:1px;background:var(--gold)}
+.fleet-model{
+  font-family:var(--serif);font-size:1.4rem;font-weight:400;
+  color:var(--espresso);margin-bottom:4px;
+}
+.fleet-years{
+  font-family:var(--sans);font-size:.72rem;font-weight:500;
+  letter-spacing:1px;color:var(--taupe);margin-bottom:14px;
+}
+.fleet-mpg{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--gold-pale);border:1px solid rgba(184,144,42,.2);
+  padding:4px 12px;font-family:var(--sans);
+  font-size:.68rem;font-weight:600;color:var(--bark);margin-bottom:14px;
+}
+.fleet-desc{
+  font-family:var(--sans);font-size:.83rem;font-weight:300;
+  color:var(--taupe);line-height:1.8;margin-bottom:20px;
+}
+.fleet-price{
+  font-family:var(--serif);font-size:1.2rem;color:var(--espresso);margin-bottom:4px;
+}
+.fleet-price small{
+  font-family:var(--sans);font-size:.7rem;color:var(--taupe);font-weight:400;
+}
+.fleet-cta{
+  font-family:var(--sans);font-size:.68rem;font-weight:600;
+  letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);
+  text-decoration:none;display:inline-flex;align-items:center;gap:5px;
+  transition:gap .2s;
+}
+.fleet-cta:hover{gap:10px}
+
+/* ── PHOTO GRID ─────────────────────────────────── */
+.photo-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;gap:2px;height:580px;
+}
+.photo-grid img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s;
+}
+.photo-grid img:hover{transform:scale(1.02)}
+.photo-grid .span2{grid-row:1/3}
+
+/* ── FEATURE CARDS ──────────────────────────────── */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand)}
+.feat-card{
+  background:var(--white);padding:36px 32px;transition:background .25s;
+}
+.feat-card:hover{background:var(--linen)}
+.feat-icon{font-size:1.4rem;margin-bottom:14px}
+.feat-title{
+  font-family:var(--sans);font-weight:600;font-size:.88rem;
+  letter-spacing:.3px;color:var(--espresso);margin-bottom:8px;
+}
+.feat-desc{
+  font-family:var(--sans);font-size:.82rem;font-weight:300;
+  color:var(--taupe);line-height:1.8;
+}
+
+/* ── WHO GRID ───────────────────────────────────── */
+.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06)}
+.who-card{
+  padding:44px 28px;text-align:center;transition:background .25s;
+}
+.who-card:hover{background:rgba(184,144,42,.06)}
+.who-icon{
+  width:50px;height:50px;border-radius:50%;
+  background:rgba(184,144,42,.1);border:1px solid rgba(184,144,42,.2);
+  margin:0 auto 18px;display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;
+}
+.who-title{
+  font-family:var(--sans);font-weight:600;font-size:.85rem;
+  color:#f5f0e8;margin-bottom:8px;letter-spacing:.3px;
+}
+.who-desc{
+  font-family:var(--sans);font-size:.8rem;font-weight:300;
+  color:rgba(245,240,232,.42);line-height:1.75;
+}
+
+/* ── TRUST SPLIT ─────────────────────────────────── */
+.trust-split{display:grid;grid-template-columns:1fr 1fr}
+.trust-left{
+  padding:80px 64px;background:var(--warm-dk);
+  position:relative;overflow:hidden;
+}
+.trust-left::after{
+  content:'';position:absolute;top:-60px;right:-60px;
+  width:240px;height:240px;border-radius:50%;
+  background:rgba(184,144,42,.05);
+}
+.trust-left h2{color:#f5f0e8}
+.trust-left .eyebrow{color:var(--gold)}
+.trust-left .eyebrow::before{background:var(--gold)}
+.trust-copy{
+  font-family:var(--sans);font-size:.88rem;font-weight:300;
+  color:rgba(245,240,232,.48);line-height:1.95;margin-bottom:22px;
+}
+.trust-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(184,144,42,.1);border:1px solid rgba(184,144,42,.22);
+  padding:10px 20px;
+}
+.trust-tag-dot{
+  width:6px;height:6px;border-radius:50%;background:var(--gold);
+  animation:blink 2s infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.trust-tag span{
+  font-family:var(--sans);font-size:.62rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;color:var(--gold);
+}
+.trust-right{padding:80px 64px;background:var(--linen)}
+.trust-items{display:flex;flex-direction:column}
+.trust-item{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--sand)}
+.trust-item:first-child{border-top:1px solid var(--sand)}
+.trust-item-icon{font-size:1.2rem;flex-shrink:0;margin-top:3px}
+.trust-item-title{
+  font-family:var(--sans);font-weight:600;font-size:.88rem;
+  color:var(--espresso);margin-bottom:5px;letter-spacing:.2px;
+}
+.trust-item-desc{
+  font-family:var(--sans);font-size:.82rem;font-weight:300;
+  color:var(--taupe);line-height:1.75;
+}
+
+/* ── PRICING ─────────────────────────────────────── */
+.pricing-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1px;background:var(--sand);max-width:900px;
+}
+.price-card{background:var(--white);padding:52px 48px;position:relative}
+.price-card.featured{background:var(--espresso)}
+.price-tag{
+  font-family:var(--sans);font-size:.6rem;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;color:var(--gold);
+  margin-bottom:28px;display:block;
+}
+.price-period{
+  font-family:var(--sans);font-size:.72rem;font-weight:500;
+  letter-spacing:2px;text-transform:uppercase;color:var(--taupe);margin-bottom:12px;
+}
+.price-card.featured .price-period{color:rgba(245,240,232,.38)}
+.price-amount{
+  font-family:var(--serif);font-size:5rem;font-weight:400;font-style:italic;
+  color:var(--espresso);line-height:1;margin-bottom:6px;
+}
+.price-card.featured .price-amount{color:#f5f0e8}
+.price-day{
+  font-family:var(--sans);font-size:.8rem;color:var(--taupe);margin-bottom:32px;
+}
+.price-card.featured .price-day{color:rgba(245,240,232,.38)}
+.price-feats{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:40px}
+.price-feats li{
+  display:flex;align-items:center;gap:10px;
+  font-family:var(--sans);font-size:.88rem;font-weight:300;color:var(--taupe);
+}
+.price-card.featured .price-feats li{color:rgba(245,240,232,.6)}
+.pf-check{color:var(--gold);font-size:.72rem;flex-shrink:0}
+.best-badge{
+  position:absolute;top:-10px;right:24px;
+  background:var(--gold);color:var(--warm-dk);
+  font-family:var(--sans);font-size:.58rem;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;padding:4px 12px;
+}
+.price-btn{
+  display:inline-block;padding:14px 36px;
+  font-family:var(--sans);font-size:.7rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;text-decoration:none;transition:all .2s;
+}
+.price-btn.dark{background:var(--espresso);color:#f5f0e8}
+.price-btn.dark:hover{background:var(--bark)}
+.price-btn.light{background:#f5f0e8;color:var(--espresso)}
+.price-btn.light:hover{background:var(--parchment)}
+
+/* ── REQUIREMENTS ────────────────────────────────── */
+.req-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand)}
+.req-card{background:var(--white);padding:44px 36px;transition:background .25s}
+.req-card:hover{background:var(--linen)}
+.req-num{
+  font-family:var(--serif);font-size:2.8rem;font-style:italic;
+  color:var(--sand);line-height:1;margin-bottom:16px;
+}
+.req-title{
+  font-family:var(--sans);font-weight:700;font-size:.82rem;
+  letter-spacing:.3px;text-transform:uppercase;color:var(--espresso);margin-bottom:8px;
+}
+.req-desc{
+  font-family:var(--sans);font-size:.82rem;font-weight:300;
+  color:var(--taupe);line-height:1.8;
+}
+
+/* ── LOCATION ────────────────────────────────────── */
+.location-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.map-embed{width:100%;height:360px;border:0;border-radius:2px;filter:sepia(.15) saturate(.9)}
+.location-details{display:flex;flex-direction:column}
+.loc-row{
+  display:flex;justify-content:space-between;align-items:flex-start;
+  padding:18px 0;border-bottom:1px solid var(--sand);
+}
+.loc-row:first-child{border-top:1px solid var(--sand)}
+.loc-label{
+  font-family:var(--sans);font-size:.62rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;color:var(--gold);min-width:90px;
+}
+.loc-val{
+  font-family:var(--sans);font-size:.88rem;font-weight:300;
+  color:var(--espresso);text-align:right;line-height:1.65;
+}
+.loc-val a{color:var(--espresso);text-decoration:none;transition:color .2s}
+.loc-val a:hover{color:var(--gold)}
+.contact-actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+
+/* ── BLOG ────────────────────────────────────────── */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.blog-card{
+  background:var(--white);border:1px solid var(--sand);
+  overflow:hidden;transition:all .25s;
+}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(44,36,24,.08);border-color:var(--gold)}
+.blog-img{width:100%;height:180px;object-fit:cover;display:block}
+.blog-img-placeholder{
+  width:100%;height:180px;
+  background:linear-gradient(135deg,var(--espresso),var(--bark));
+  display:flex;align-items:center;justify-content:center;font-size:2rem;
+}
+.blog-body{padding:24px}
+.blog-tag{
+  font-family:var(--sans);font-size:.58rem;font-weight:700;
+  letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;
+}
+.blog-title{
+  font-family:var(--serif);font-size:1.15rem;font-weight:400;
+  color:var(--espresso);margin-bottom:10px;line-height:1.35;
+}
+.blog-excerpt{
+  font-family:var(--sans);font-size:.8rem;font-weight:300;
+  color:var(--taupe);line-height:1.75;margin-bottom:16px;
+}
+.blog-date{
+  font-family:var(--sans);font-size:.65rem;color:var(--taupe);letter-spacing:.5px;
+}
+.blog-link{
+  font-family:var(--sans);font-size:.65rem;font-weight:600;
+  letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);
+  text-decoration:none;float:right;
+}
+
+/* ── POLICIES ────────────────────────────────────── */
+.policy-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.policy-block h3{
+  font-family:var(--serif);font-size:1.2rem;font-weight:400;
+  color:#f5f0e8;margin-bottom:12px;
+  border-bottom:1px solid rgba(184,144,42,.18);padding-bottom:12px;
+}
+.policy-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.policy-list li{
+  display:flex;gap:10px;
+  font-family:var(--sans);font-size:.82rem;font-weight:300;
+  color:rgba(245,240,232,.52);line-height:1.7;
+}
+.policy-list li::before{content:'→';color:var(--gold);flex-shrink:0;font-size:.72rem;margin-top:3px}
+
+/* ── CTA BANNER ──────────────────────────────────── */
+.cta-banner{
+  background:var(--espresso);padding:96px 64px;
+  display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;
+}
+.cta-banner h2{color:#f5f0e8}
+.cta-banner-actions{display:flex;flex-direction:column;gap:10px;align-items:flex-end;flex-shrink:0}
+.cta-banner small{
+  font-family:var(--sans);font-size:.68rem;color:rgba(245,240,232,.3);font-weight:400;
+}
+
+/* ── RESERVE FORM ────────────────────────────────── */
+#reserve input,#reserve select{
+  width:100%;background:rgba(255,255,255,.06);
+  border:1px solid rgba(245,240,232,.14);
+  padding:12px 16px;font-family:var(--sans);font-size:.88rem;
+  color:#f5f0e8;outline:none;transition:border-color .2s;
+}
+#reserve input::placeholder{color:rgba(245,240,232,.28)}
+#reserve input:focus,#reserve select:focus{border-color:var(--gold)}
+#reserve select option{background:var(--espresso)}
+#reserve label{
+  display:block;font-family:var(--sans);font-size:.6rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  color:rgba(245,240,232,.4);margin-bottom:7px;
+}
+
+/* ── FOOTER ──────────────────────────────────────── */
+footer{
+  background:var(--warm-dk);
+  border-top:1px solid rgba(184,144,42,.15);
+  padding:64px;
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;
+}
+.footer-brand p{
+  font-family:var(--sans);font-size:.8rem;font-weight:300;
+  color:rgba(245,240,232,.38);line-height:1.85;max-width:220px;margin-top:14px;
+}
+.footer-col h4{
+  font-family:var(--sans);font-size:.6rem;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;
+}
+.footer-col a{
+  display:block;font-family:var(--sans);font-size:.82rem;font-weight:300;
+  color:rgba(245,240,232,.38);text-decoration:none;margin-bottom:10px;transition:color .2s;
+}
+.footer-col a:hover{color:#f5f0e8}
+.footer-bottom{
+  background:rgba(0,0,0,.25);padding:20px 64px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;
+}
+.footer-bottom p{
+  font-family:var(--sans);font-size:.68rem;color:rgba(245,240,232,.2);
+}
+.footer-bottom a{
+  font-family:var(--sans);font-size:.68rem;
+  color:rgba(245,240,232,.28);text-decoration:none;
+}
+.footer-bottom a:hover{color:var(--gold)}
+
+/* ── HERO BANNER (inner pages) ───────────────────── */
+.hero-banner{
+  margin-top:70px;background:var(--warm-dk);
+  padding:80px 64px;display:grid;grid-template-columns:1fr 1fr;
+  gap:64px;align-items:center;position:relative;overflow:hidden;
+}
+.hero-banner::before{
+  content:'';position:absolute;top:-80px;right:-80px;
+  width:360px;height:360px;border-radius:50%;background:rgba(184,144,42,.05);
+}
+.hero-banner h1{font-size:clamp(2.4rem,4vw,3.8rem)}
+
+/* Payout card — referral page */
+.payout-card{
+  background:rgba(184,144,42,.07);border:1px solid rgba(184,144,42,.2);padding:40px 44px;
+}
+.payout-amount{
+  font-family:var(--serif);font-size:6rem;font-style:italic;
+  color:var(--gold);line-height:1;margin-bottom:4px;
+}
+.payout-label{
+  font-family:var(--sans);font-size:.65rem;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;color:rgba(245,240,232,.45);margin-bottom:28px;
+}
+.payout-steps{display:flex;flex-direction:column;gap:16px}
+.payout-step{display:flex;align-items:flex-start;gap:14px}
+.step-num{
+  width:26px;height:26px;border-radius:50%;background:var(--gold);
+  color:var(--warm-dk);font-family:var(--sans);font-size:.7rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;
+}
+.step-text{
+  font-family:var(--sans);font-size:.84rem;font-weight:300;
+  color:rgba(245,240,232,.58);line-height:1.65;
+}
+.step-text strong{color:#f5f0e8;font-weight:500}
+
+/* How-it-works cards */
+.how-section{padding:80px 64px;background:var(--linen)}
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--sand);margin-top:48px}
+.how-card{background:var(--white);padding:44px 36px;position:relative}
+.how-num{
+  font-family:var(--serif);font-size:3.5rem;font-style:italic;
+  color:rgba(44,36,24,.06);line-height:1;position:absolute;top:24px;right:28px;
+}
+.how-icon{font-size:1.6rem;margin-bottom:16px}
+.how-title{
+  font-family:var(--sans);font-weight:600;font-size:.9rem;
+  color:var(--espresso);margin-bottom:8px;letter-spacing:.2px;
+}
+.how-desc{
+  font-family:var(--sans);font-size:.84rem;font-weight:300;
+  color:var(--taupe);line-height:1.8;
+}
+
+/* Referral form */
+.form-section{padding:80px 64px;background:var(--parchment)}
+.form-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--sand);max-width:1000px}
+.form-card{background:var(--white);padding:52px 48px}
+.form-card.dark{background:var(--espresso)}
+.form-card-label{
+  font-family:var(--sans);font-size:.6rem;font-weight:600;
+  letter-spacing:3px;text-transform:uppercase;color:var(--gold);
+  margin-bottom:6px;display:flex;align-items:center;gap:8px;
+}
+.form-card-label::before{content:'';width:16px;height:1px;background:var(--gold)}
+.form-card h3{
+  font-family:var(--serif);font-size:1.5rem;font-weight:400;
+  color:var(--espresso);margin-bottom:28px;line-height:1.25;
+}
+.form-card.dark h3{color:#f5f0e8}
+.field{margin-bottom:20px}
+.field label{
+  display:block;font-family:var(--sans);font-size:.62rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;color:var(--taupe);margin-bottom:8px;
+}
+.form-card.dark .field label{color:rgba(245,240,232,.42)}
+.field input,.field select{
+  width:100%;padding:13px 16px;
+  border:1px solid var(--sand);background:var(--parchment);
+  font-family:var(--sans);font-size:.88rem;color:var(--espresso);
+  outline:none;transition:border-color .2s;appearance:none;-webkit-appearance:none;
+}
+.field input:focus,.field select:focus{border-color:var(--gold)}
+.form-card.dark .field input,.form-card.dark .field select{
+  background:rgba(255,255,255,.05);border-color:rgba(245,240,232,.12);color:#f5f0e8;
+}
+.form-card.dark .field input::placeholder{color:rgba(245,240,232,.28)}
+.form-card.dark .field input:focus,.form-card.dark .field select:focus{border-color:var(--gold)}
+.form-card.dark .field select option{background:var(--espresso);color:#f5f0e8}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.checkbox-group{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.checkbox-item{display:flex;align-items:center;gap:10px;cursor:pointer}
+.checkbox-item input[type=checkbox]{width:16px;height:16px;accent-color:var(--gold);cursor:pointer;flex-shrink:0}
+.checkbox-item span{
+  font-family:var(--sans);font-size:.88rem;font-weight:300;color:var(--espresso);
+}
+.form-card.dark .checkbox-item span{color:rgba(245,240,232,.65)}
+.btn-submit{
+  width:100%;background:var(--gold);color:var(--warm-dk);border:none;
+  padding:16px;font-family:var(--sans);font-size:.75rem;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .25s;margin-top:8px;
+}
+.btn-submit:hover{background:var(--gold-lt);box-shadow:0 6px 24px rgba(184,144,42,.3)}
+.form-note{
+  font-family:var(--sans);font-size:.68rem;font-weight:300;
+  color:rgba(245,240,232,.28);text-align:center;margin-top:14px;line-height:1.65;
+}
+.divider-line{height:1px;background:var(--sand);margin:24px 0}
+.form-card.dark .divider-line{background:rgba(255,255,255,.08)}
+
+/* Terms strip */
+.terms-strip{
+  background:var(--espresso);padding:32px 64px;
+  display:flex;align-items:center;gap:40px;flex-wrap:wrap;
+}
+.terms-item{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--sans);font-size:.78rem;font-weight:300;
+  color:rgba(245,240,232,.5);
+}
+.terms-item::before{content:'✓';color:var(--gold);font-weight:700;font-size:.7rem;flex-shrink:0}
+
+/* CTA strip */
+.cta-strip{
+  background:var(--gold);padding:64px;
+  display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;
+}
+.cta-strip h2{
+  font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.8rem);
+  font-weight:400;color:var(--warm-dk);line-height:1.15;
+}
+.cta-strip h2 em{font-style:italic}
+.cta-actions{display:flex;flex-direction:column;gap:10px;align-items:flex-end;flex-shrink:0}
+
+/* Success message */
+.success-msg{display:none;text-align:center;padding:40px 24px}
+.success-icon{font-size:2.8rem;margin-bottom:16px}
+.success-title{
+  font-family:var(--serif);font-size:1.8rem;font-style:italic;
+  color:var(--gold);margin-bottom:10px;
+}
+.success-text{
+  font-family:var(--sans);font-size:.88rem;font-weight:300;
+  color:rgba(245,240,232,.55);line-height:1.85;
+}
+
+/* ── REVEAL ──────────────────────────────────────── */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* ── RESPONSIVE ──────────────────────────────────── */
+@media(max-width:960px){
+  nav{padding:0 20px}
+  .nav-links,.nav-phone{display:none}
+  .hamburger{display:flex}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-left{padding:60px 24px}
+  .hero-right{height:340px}
+  .stats{grid-template-columns:1fr 1fr}
+  .section{padding:64px 24px}
+  .fleet-grid,.feat-grid,.who-grid,.req-grid,.blog-grid{grid-template-columns:1fr}
+  .trust-split,.location-inner,.pricing-grid,.policy-grid,.form-wrap{grid-template-columns:1fr}
+  .trust-left,.trust-right{padding:60px 24px}
+  .cta-banner{grid-template-columns:1fr;padding:64px 24px;gap:28px}
+  .cta-banner-actions{align-items:flex-start}
+  footer{grid-template-columns:1fr 1fr;padding:48px 24px;gap:32px}
+  .footer-bottom{padding:16px 24px}
+  .photo-grid{grid-template-columns:1fr;grid-template-rows:auto;height:auto}
+  .photo-grid .span2{grid-row:auto}
+  .hero-banner{grid-template-columns:1fr;padding:60px 24px;gap:40px}
+  .how-section{padding:60px 24px}
+  .how-grid{grid-template-columns:1fr}
+  .form-section{padding:60px 24px}
+  .form-card{padding:36px 28px}
+  .terms-strip{padding:28px 24px;gap:16px}
+  .cta-strip{grid-template-columns:1fr;padding:60px 24px;gap:24px}
+  .cta-actions{align-items:flex-start}
+  .field-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:0">
+      <div style="display:flex;align-items:center;gap:5px;margin-bottom:8px">
+        <div style="width:20px;height:2px;background:rgba(44,26,8,.15);border-radius:100px"></div>
+        <div style="width:5px;height:5px;border-radius:50%;background:#b8902a;flex-shrink:0"></div>
+        <div style="width:20px;height:2px;background:rgba(44,26,8,.15);border-radius:100px"></div>
+      </div>
+      <div style="display:flex;align-items:baseline;line-height:1">
+        <span style="font-family:'DM Sans',sans-serif;font-weight:200;font-size:1.15rem;text-transform:uppercase;letter-spacing:5px;color:rgba(44,26,8,.3)">CITY</span><span style="font-family:'DM Sans',sans-serif;font-weight:800;font-size:1.15rem;text-transform:uppercase;letter-spacing:1.5px;color:#2c1a08">KAR</span>
+      </div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="fleet.html">Fleet</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="referral.html">Refer &amp; Earn</a>
+    <a href="policies.html">Policies</a>
+    <a href="contact.html" style="color:var(--gold)">Contact</a>
+  </div>
+  <div class="nav-end">
+    <a href="tel:3233333095" class="nav-phone">📞 (323) 333-3095</a>
+    <a href="contact.html" class="nav-cta">Reserve Now</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="fleet.html">Fleet</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="blog.html">Blog</a>
+  <a href="referral.html">Refer &amp; Earn $50 💵</a>
+  <a href="policies.html">Policies</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:3233333095" style="color:var(--gold);font-weight:700">📞 (323) 333-3095</a>
+</div>
+
+<div style="background:var(--forest);padding:100px 64px 64px;margin-top:68px">
+    <div class="eyebrow">Get In Touch</div>
+    <h2 style="color:var(--cream)">We're Here<br>7 Days a Week</h2>
+    <p style="font-size:.95rem;color:rgba(248,245,239,.5);max-width:480px;line-height:1.85">Call, text, or email — we respond fast. Come visit us at 1437 N La Brea Ave in Los Angeles.</p>
+  </div>
+
+  <section class="section alt">
+    <div class="location-inner">
+      <div>
+        <div class="eyebrow">Find Us</div>
+        <h2>West Hollywood,<br>Los Angeles</h2>
+        <iframe class="map-embed reveal visible" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4!2d-118.3387!3d34.0928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b87f2a4e5555%3A0x0!2s1437+N+La+Brea+Ave%2C+Los+Angeles%2C+CA+90028!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="City Kar Location"></iframe>
+        <div style="margin-top:16px;background:var(--forest);color:var(--cream);padding:16px 20px;border-radius:4px;font-size:.82rem;line-height:1.7">
+          📍 <strong>1437 N La Brea Ave, Los Angeles, CA 90028</strong><br>
+          <span style="color:rgba(248,245,239,.5)">Cross street: Fountain Ave · Easy street parking available</span>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Contact Details</div>
+        <h2>Reach Out<br>Any Way You Like</h2>
+        <div class="location-details">
+          <div class="loc-row"><div class="loc-label">Address</div><div class="loc-val">1437 N La Brea Ave<br>Los Angeles, CA 90028</div></div>
+          <div class="loc-row"><div class="loc-label">Phone</div><div class="loc-val"><a href="tel:3233333095">(323) 333-3095</a><br><span style="font-size:.75rem;color:var(--muted)">Call or Text · 7 days/week</span></div></div>
+          <div class="loc-row"><div class="loc-label">Email</div><div class="loc-val"><a href="mailto:citykarrental@gmail.com">citykarrental@gmail.com</a></div></div>
+          <div class="loc-row"><div class="loc-label">Hours</div><div class="loc-val">By Appointment<br><span style="font-size:.75rem;color:var(--muted)">Mon–Sun · Support 7 Days</span></div></div>
+        </div>
+        <div class="contact-actions">
+          <a href="tel:3233333095" class="btn-gold">📞 Call Now</a>
+          <a href="sms:3233333095" class="btn-forest">💬 Send a Text</a>
+          <a href="mailto:citykarrental@gmail.com" class="btn-gold-outline">✉️ Email Us</a>
+        </div>
+        <div style="margin-top:32px;padding:24px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:4px">
+          <div style="font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Response Time</div>
+          <p style="font-size:.85rem;color:var(--muted);line-height:1.75">We typically respond to calls and texts within 1–2 hours. Email responses within 24 hours. For fastest service, call or text <a href="tel:3233333095" style="color:var(--forest);font-weight:600">(323) 333-3095</a> directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 116 116" width="56" height="56" style="flex-shrink:0;overflow:visible">
+        <circle cx="50" cy="50" r="49" fill="#0e2618"></circle>
+        <circle cx="50" cy="50" r="49" fill="none" stroke="#c9a84c" stroke-width="2.2"></circle>
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#c9a84c" stroke-width="0.75"></circle>
+        <rect x="42" y="1.5" width="7" height="3" fill="#c9a84c"></rect>
+        <rect x="51" y="1.5" width="7" height="3" fill="#c9a84c"></rect>
+        <polygon points="50,-7 55.5,3 50,13 44.5,3" fill="#c9a84c"></polygon>
+        <rect x="42" y="95.5" width="7" height="3" fill="#c9a84c"></rect>
+        <rect x="51" y="95.5" width="7" height="3" fill="#c9a84c"></rect>
+        <polygon points="50,107 55.5,97 50,87 44.5,97" fill="#c9a84c"></polygon>
+        <rect x="1.5" y="42" width="3" height="7" fill="#c9a84c"></rect>
+        <rect x="1.5" y="51" width="3" height="7" fill="#c9a84c"></rect>
+        <polygon points="-7,50 3,44.5 13,50 3,55.5" fill="#c9a84c"></polygon>
+        <rect x="95.5" y="42" width="3" height="7" fill="#c9a84c"></rect>
+        <rect x="95.5" y="51" width="3" height="7" fill="#c9a84c"></rect>
+        <polygon points="107,50 97,44.5 87,50 97,55.5" fill="#c9a84c"></polygon>
+        <circle cx="15" cy="15" r="3" fill="#c9a84c"></circle>
+        <circle cx="85" cy="15" r="3" fill="#c9a84c"></circle>
+        <circle cx="15" cy="85" r="3" fill="#c9a84c"></circle>
+        <circle cx="85" cy="85" r="3" fill="#c9a84c"></circle>
+        <rect x="24" y="24" width="10" height="52" fill="white"></rect>
+        <rect x="66" y="24" width="10" height="52" fill="white"></rect>
+        <rect x="24" y="44" width="52" height="11" fill="white"></rect>
+      </svg>
+      <div>
+        <div style="font-family:'Times New Roman',Times,serif;font-size:1.1rem;letter-spacing:2.5px;text-transform:uppercase;color:#f8f5ef;line-height:1">CITY KAR</div>
+        <div style="font-family:'Times New Roman',Times,serif;font-size:.58rem;letter-spacing:5px;color:#c9a84c;margin-top:3px"></div>
+        <div style="font-family:'Times New Roman',Times,serif;font-size:.55rem;font-style:italic;color:rgba(248,245,239,.32);margin-top:3px">Driven by excellence.</div>
+      </div>
+    </div>
+    <p>Premium hybrid vehicle rentals for gig economy drivers in Los Angeles. Mechanic-maintained fleet. Flexible weekly &amp; monthly terms.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Navigate</h4>
+    <a href="index.html">Home</a>
+    <a href="fleet.html">Our Fleet</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="blog.html">Blog</a>
+    <a href="referral.html">Refer &amp; Earn</a>
+    <a href="policies.html">Policies</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <a href="tel:3233333095">(323) 333-3095</a>
+    <a href="mailto:citykarrental@gmail.com">citykarrental@gmail.com</a>
+    <a href="contact.html">1437 N La Brea Ave</a>
+    <a href="contact.html">Los Angeles, CA 90028</a>
+  </div>
+  <div class="footer-col">
+    <h4>Drivers</h4>
+    <a href="fleet.html">Uber Drivers</a>
+    <a href="fleet.html">Lyft Drivers</a>
+    <a href="fleet.html">DoorDash Drivers</a>
+    <a href="pricing.html">Rent-to-Own</a>
+    <a href="policies.html">Rental Policies</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2025 City Kar · Los Angeles, CA · All Rights Reserved</p>
+  <div style="display:flex;gap:16px">
+    <a href="policies.html">Terms &amp; Conditions</a>
+    <a href="policies.html">Rental Policy</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').style.boxShadow = window.scrollY > 20 ? '0 2px 24px rgba(0,0,0,.3)' : 'none';
+});
+</script>
+
+</body></html>
