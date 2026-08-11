@@ -28,3 +28,46 @@ jobs:
             **/.github/**
             **/scripts/**
             **/node_modules/**
+            *.md
+            *.py
+            *.json
+            *.txt
+            *.xml
+            *.jpg
+            *.jpeg
+            *.png
+            *.gif
+            *.webp
+            *.svg
+            default.php
+            best-hybrid-car-rental-los-angeles.html
+            blog-about-city-kar.html
+            blog-discounted-rates-6-week-2-month-rentals-la.html
+            blog-earn-more-uber-lyft-la.html
+            blog-new.html
+            blog-prius-driver-tips.html
+            blog-prius-fuel-savings.html
+            blog-prius-prime.html
+            blog-rent-car-la-6-7-weeks-internship.html
+            blog-rent-prius-hybrid-under-700-la.html
+            blog-rent-to-own.html
+            blog-renting-hybrid-smarter.html
+            blog-renting-hybrid.html
+            blog-student-intern-budget-temporary-car-la.html
+            blog-uber-lyft-doordash.html
+            blog-update.html
+            cheapest-safe-reliable-car-rental-los-angeles-one-month.html
+            citykar-faq-citykar-style-accordion.html
+            doordash-drivers.html
+            faq.html
+            fleet.html
+            hybrid-car-rental-los-angeles.html
+            index.html
+            locations.html
+            lyft-drivers.html
+            policies.html
+            pricing.html
+            referral.html
+            ride.html
+            uber-drivers.html
+            why-monthly-car-rentals-la-cost-nearly-as-much-as-daily.html
