@@ -1,8 +1,6 @@
 name: Deploy to Hostinger
 
 on:
-  push:
-    branches: [master]
   workflow_dispatch: {}
 
 jobs:
@@ -15,13 +13,15 @@ jobs:
       - name: Regenerate blog.html from posts.json
         run: node scripts/build-blog.js
 
-      - name: Deploy over FTP to Hostinger
+      - name: Deploy over FTP to Hostinger (DRY RUN - verify before real deploy)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOSTINGER_FTP_SERVER }}
           username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
           password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
           server-dir: ${{ secrets.HOSTINGER_FTP_SERVER_DIR }}
+          dry-run: true
+          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
